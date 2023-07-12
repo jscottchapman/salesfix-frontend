@@ -56,9 +56,10 @@ const Cohorts = () => {
         <div>
             <h2>Open Cohorts</h2>
             <Card.Group centered>
-                {classes.map((classItem) => (
-                    <CohortCard classData={classItem} />
-                ))}
+                {classes &&
+                    classes.map((classItem) => (
+                        <CohortCard classData={classItem} />
+                    ))}
             </Card.Group>
         </div>
     );
